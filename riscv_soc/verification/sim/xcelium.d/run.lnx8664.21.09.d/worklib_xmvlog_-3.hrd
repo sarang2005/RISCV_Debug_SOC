@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv

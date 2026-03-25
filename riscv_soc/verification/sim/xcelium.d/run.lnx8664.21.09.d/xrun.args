@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-access
++rwc
+-timescale
+1ns/1ns
+-uvm
+-f
+file_list.f

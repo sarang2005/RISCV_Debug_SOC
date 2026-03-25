@@ -1,0 +1,60 @@
+//
+// File created by:  xmprep
+//
+-UVMNOSINGLESTEP
+
+// Defines.
+-define
+UVM_PLI
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+
+// Include Directories (for Internal use only!)
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/sv/src
+
+// Defines.
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+
+// Include Directories (for Internal use only!)
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv
+
+// Turn on informative messages.
+-MESSAGES
+
+// Comment the following line to force recompilation.
+-UPDATE
+
+// Source Files
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/apb_slave.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/axi_master.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_fsm.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_file.v
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_mux.v
+
+// Uncomment the following line to generate a named log file
+// -LOGFILE xmvlog.log
+
+// -NOCOPYRIGHT

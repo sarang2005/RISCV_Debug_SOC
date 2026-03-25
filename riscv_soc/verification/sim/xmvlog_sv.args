@@ -1,0 +1,87 @@
+//
+// File created by:  xmprep
+//
+-UVMNOSINGLESTEP
+
+// Defines.
+-define
+UVM_PLI
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
+
+// Include Directories
+-INCDIR
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+
+// Include Directories (for Internal use only!)
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/sv/src
+
+// Defines.
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+
+// Include Directories (for Internal use only!)
+-I_INCDIR
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv
+
+// Turn on informative messages.
+-MESSAGES
+
+// Comment the following line to force recompilation.
+-UPDATE
+
+// Source Files
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_apu_core_pkg.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_fpu_pkg.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_pkg.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include/cv32e40p_tracer_pkg.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_if_stage.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_cs_registers.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_register_file_ff.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_load_store_unit.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_id_stage.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_aligner.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_decoder.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_compressed_decoder.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_fifo.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_buffer.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_hwloop_regs.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_mult.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_int_controller.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ex_stage.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu_div.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ff_one.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_popcnt.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_apu_disp.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_controller.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_obi_interface.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_controller.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_sleep_unit.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_sim_clock_gate.sv
+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_wrapper.sv
+../../dut/rtl/cv32e40p_data2axi.sv
+../../dut/rtl/soc_wrapper.sv
+soc_wrapper_tb.sv
+-sv
+
+// Uncomment the following line to generate a named log file
+// -LOGFILE xmvlog.log
+
+// -NOCOPYRIGHT

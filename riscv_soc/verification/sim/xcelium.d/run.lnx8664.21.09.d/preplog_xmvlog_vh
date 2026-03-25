@@ -1,0 +1,6 @@
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4

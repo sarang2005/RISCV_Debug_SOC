@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(13Jan2026:16:04:44):( xmprep -64bit +overwrite -timescale 1ns/1ns -uvm -f file_list.f +debug )
+s2::(14Jan2026:14:30:10):( xrun -64bit -access +rwc -timescale 1ns/1ns -uvm -f file_list.f )

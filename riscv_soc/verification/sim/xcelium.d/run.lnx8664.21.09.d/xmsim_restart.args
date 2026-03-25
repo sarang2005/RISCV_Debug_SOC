@@ -1,0 +1,37 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INPUT
+"@source /tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl"
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+-uvmhome
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d
+-sv_lib
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so
+-MESSAGES
+-RUN
+-SV_LIB
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmdpi.so
++EMGRLOG
+xrun.log
+-XLSTIME
+1768381209
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.21.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.21.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.21.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	21.09-s005"
+-XLNAME
+./xcelium.d/run.lnx8664.21.09.d/oeaadp_241716

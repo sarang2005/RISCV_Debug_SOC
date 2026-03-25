@@ -1,0 +1,380 @@
+xrun(64): 21.09-s005: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	21.09-s005: Started on Jan 14, 2026 at 14:30:09 IST
+xrun
+	-64bit
+	-access +rwc
+	-timescale 1ns/1ns
+	-uvm
+	-f file_list.f
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_apu_core_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_fpu_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include/cv32e40p_tracer_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_if_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_cs_registers.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_register_file_ff.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_load_store_unit.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_id_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_aligner.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_decoder.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_compressed_decoder.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_fifo.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_buffer.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_hwloop_regs.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_mult.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_int_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ex_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu_div.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ff_one.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_popcnt.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_apu_disp.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_obi_interface.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_sleep_unit.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_sim_clock_gate.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_wrapper.sv
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/apb_slave.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/axi_master.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_fsm.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_file.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_mux.v
+		../../dut/rtl/cv32e40p_data2axi.sv
+		../../dut/rtl/soc_wrapper.sv
+		soc_wrapper_tb.sv
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_apu_core_pkg.sv
+	package worklib.cv32e40p_apu_core_pkg:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_fpu_pkg.sv
+	package worklib.cv32e40p_fpu_pkg:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_pkg.sv
+	package worklib.cv32e40p_pkg:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include/cv32e40p_tracer_pkg.sv
+	package worklib.cv32e40p_tracer_pkg:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_if_stage.sv
+	module worklib.cv32e40p_if_stage:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_cs_registers.sv
+	module worklib.cv32e40p_cs_registers:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_register_file_ff.sv
+	module worklib.cv32e40p_register_file:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_load_store_unit.sv
+	module worklib.cv32e40p_load_store_unit:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_id_stage.sv
+	module worklib.cv32e40p_id_stage:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_aligner.sv
+	module worklib.cv32e40p_aligner:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_decoder.sv
+	module worklib.cv32e40p_decoder:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_compressed_decoder.sv
+	module worklib.cv32e40p_compressed_decoder:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_fifo.sv
+	module worklib.cv32e40p_fifo:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_buffer.sv
+	module worklib.cv32e40p_prefetch_buffer:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_hwloop_regs.sv
+	module worklib.cv32e40p_hwloop_regs:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_mult.sv
+	module worklib.cv32e40p_mult:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_int_controller.sv
+	module worklib.cv32e40p_int_controller:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ex_stage.sv
+	module worklib.cv32e40p_ex_stage:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu_div.sv
+	module worklib.cv32e40p_alu_div:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu.sv
+	module worklib.cv32e40p_alu:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ff_one.sv
+	module worklib.cv32e40p_ff_one:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_popcnt.sv
+	module worklib.cv32e40p_popcnt:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_apu_disp.sv
+	module worklib.cv32e40p_apu_disp:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_controller.sv
+	module worklib.cv32e40p_controller:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_obi_interface.sv
+	module worklib.cv32e40p_obi_interface:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_controller.sv
+	module worklib.cv32e40p_prefetch_controller:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_sleep_unit.sv
+	module worklib.cv32e40p_sleep_unit:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv
+	module worklib.cv32e40p_core:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_sim_clock_gate.sv
+	module worklib.cv32e40p_clock_gate:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_wrapper.sv
+	module worklib.cv32e40p_core_log:sv
+		errors: 0, warnings: 0
+	module worklib.cv32e40p_wrapper:sv
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/apb_slave.v
+	module worklib.apb_slave:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/axi_master.v
+	module worklib.axi_master:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module.v
+	module worklib.debug_module:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_fsm.v
+	module worklib.debug_module_fsm:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v
+	module worklib.debug_module_top:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_file.v
+	module worklib.dm_register_file:v
+		errors: 0, warnings: 0
+	module worklib.dmcontrol:v
+		errors: 0, warnings: 0
+	module worklib.dmstatus:v
+		errors: 0, warnings: 0
+	module worklib.command:v
+		errors: 0, warnings: 0
+	module worklib.abstractcs:v
+		errors: 0, warnings: 0
+	module worklib.data_reg:v
+		errors: 0, warnings: 0
+file: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_mux.v
+	module worklib.dm_register_mux:v
+		errors: 0, warnings: 0
+file: ../../dut/rtl/cv32e40p_data2axi.sv
+	module worklib.cv32e40p_data2axi:sv
+		errors: 0, warnings: 0
+file: ../../dut/rtl/soc_wrapper.sv
+	module worklib.riscv_soc_wrapper:sv
+		errors: 0, warnings: 0
+file: soc_wrapper_tb.sv
+	module worklib.tb_riscv_soc_wrapper:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva given but not used.
+xmvlog: *W,SPDUSD: Include directory /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    cv32e40p_core_i
+                  |
+xmelab: *W,CUVWSP (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,210|18): 3 output ports were not connected:
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,91): debug_havereset_o
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,92): debug_running_o
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,93): debug_halted_o
+
+    cv32e40p_core_i
+                  |
+xmelab: *W,CUVWSI (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,210|18): 2 input ports were not connected:
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,49): mtvec_addr_i
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,52): dm_exception_addr_i
+
+	Top level design units:
+		cv32e40p_apu_core_pkg
+		cv32e40p_pkg
+		cv32e40p_fpu_pkg
+		cv32e40p_wrapper
+		tb_riscv_soc_wrapper
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+         .irq_id_o               ( irq_id_out_o            ),
+                                              |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,249|46): port sizes differ in port connection(1/5) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_awaddr(core_axi_m_awaddr),
+                                         |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,358|41): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_wdata(core_axi_m_wdata),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,368|39): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_wstrb(core_axi_m_wstrb),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,369|39): port sizes differ in port connection(8/4) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_araddr(core_axi_m_araddr),
+                                         |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,378|41): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_rdata(core_axi_m_rdata),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,387|39): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+     .access_mem_data_in             (mem_read_data              ),
+                                                  |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v,276|50): port sizes differ in port connection(32/64) for the instance(tb_riscv_soc_wrapper.dut.dut) .
+     .core_data_in                   (core_read_data             ),
+                                                   |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v,289|51): port sizes differ in port connection(32/64) for the instance(tb_riscv_soc_wrapper.dut.dut) .
+  .axi_awaddr ( core_axi_m_awaddr ),
+                                |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,425|32): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_wdata  ( core_axi_m_wdata ),
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,429|31): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_wstrb  ( core_axi_m_wstrb ),
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,430|31): port sizes differ in port connection(8/4) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_araddr ( core_axi_m_araddr ),
+                                |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,437|32): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_rdata  ( core_axi_m_rdata )
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,441|31): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.cv32e40p_data2axi:sv <0x75fa6f9a>
+			streams:   4, words:  3847
+		worklib.axi_master:v <0x5f7d0c93>
+			streams:   4, words: 14112
+		worklib.debug_module_fsm:v <0x63c86087>
+			streams:   7, words:  5977
+		worklib.dm_register_mux:v <0x4a7a278a>
+			streams:   3, words:  3131
+		worklib.data_reg:v <0x008783ce>
+			streams:  39, words: 31714
+		worklib.dmstatus:v <0x429540fd>
+			streams:   4, words: 10294
+		worklib.command:v <0x274807f2>
+			streams:   9, words:  7326
+		worklib.dmcontrol:v <0x4107992a>
+			streams:  16, words:  6225
+		worklib.abstractcs:v <0x0e2b9528>
+			streams:   5, words:  4084
+		worklib.dm_register_file:v <0x3f0f46b6>
+			streams:  14, words:  6822
+		worklib.apb_slave:v <0x32dddb13>
+			streams:   8, words:  4757
+		worklib.debug_module_top:v <0x47061aab>
+			streams:  14, words:  8288
+		worklib.cv32e40p_int_controller:sv <0x60ba9a15>
+			streams:  10, words:  8593
+		worklib.cv32e40p_controller:sv <0x48d80be5>
+			streams:  42, words: 72748
+		worklib.cv32e40p_core:sv <0x35381a45>
+			streams: 361, words: 89893
+		worklib.riscv_soc_wrapper:sv <0x2d6ad1e6>
+			streams:  87, words: 22166
+		worklib.tb_riscv_soc_wrapper:sv <0x1ad1dffd>
+			streams:  84, words: 28886
+		worklib.cv32e40p_obi_interface:sv <0x03f6c7f0>
+			streams:  12, words:  2161
+		worklib.cv32e40p_load_store_unit:sv <0x2d0b4b36>
+			streams:  54, words: 28430
+		worklib.cv32e40p_mult:sv <0x51db2155>
+			streams:  41, words: 28898
+		worklib.cv32e40p_ex_stage:sv <0x24d91cc1>
+			streams:  38, words: 17345
+		worklib.cv32e40p_int_controller:sv <0x449bc217>
+			streams:  10, words:  8593
+		worklib.cv32e40p_controller:sv <0x4e580784>
+			streams:  42, words: 72748
+		worklib.cv32e40p_decoder:sv <0x74bb03fa>
+			streams:  15, words: 56470
+		worklib.cv32e40p_compressed_decoder:sv <0x1fa8a03a>
+			streams:   6, words: 17818
+		worklib.cv32e40p_aligner:sv <0x197f2e2b>
+			streams:   6, words:  9110
+		worklib.cv32e40p_obi_interface:sv <0x6a3b48c4>
+			streams:  18, words:  6246
+		worklib.cv32e40p_fifo:sv <0x4cf21cf0>
+			streams:  11, words:  8957
+		worklib.cv32e40p_prefetch_controller:sv <0x73cf4e88>
+			streams:  25, words: 10024
+		worklib.cv32e40p_prefetch_buffer:sv <0x5cb87bfe>
+			streams:  33, words:  8584
+		worklib.cv32e40p_if_stage:sv <0x28afecfb>
+			streams:  32, words: 16213
+		worklib.cv32e40p_clock_gate:sv <0x059b92e8>
+			streams:   3, words:   686
+		worklib.cv32e40p_sleep_unit:sv <0x601a3cd8>
+			streams:  11, words:  3324
+		worklib.cv32e40p_core_log:sv <0x225ab437>
+			streams:   2, words:  2982
+		worklib.cv32e40p_wrapper:sv <0x52fdde26>
+			streams:  20, words:  6227
+		worklib.cv32e40p_id_stage:sv <0x0f9def91>
+			streams: 283, words: 128751
+		worklib.cv32e40p_core:sv <0x109b3194>
+			streams: 361, words: 90449
+		worklib.cv32e40p_register_file:sv <0x0d09a95e>
+			streams:  15, words:  8269
+		worklib.cv32e40p_register_file:sv <0x6c26a2c4>
+			streams:  15, words:  8269
+		worklib.cv32e40p_popcnt:sv <0x1a4b7fc4>
+			streams:   5, words:  2440
+		worklib.cv32e40p_ff_one:sv <0x51e0b5f5>
+			streams:  13, words: 13861
+		worklib.cv32e40p_alu_div:sv <0x64874c69>
+			streams:  22, words: 11981
+		worklib.cv32e40p_alu:sv <0x3f39c1db>
+			streams: 115, words: 102404
+		worklib.cv32e40p_cs_registers:sv <0x0aed43d0>
+			streams:  95, words: 81998
+		worklib.cv32e40p_id_stage:sv <0x6fa78d2c>
+			streams: 283, words: 128908
+		worklib.cv32e40p_fpu_pkg:sv <0x6d4b7511>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 66      42
+		Verilog packages:         3       4
+		Registers:             2545    1416
+		Scalar wires:          2643       -
+		Expanded wires:          83       5
+		Vectored wires:        1871       -
+		Always blocks:          284     142
+		Initial blocks:           4       4
+		Cont. assignments:     2028     610
+		Pseudo assignments:    1382    1295
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.cv32e40p_wrapper:sv
+Loading snapshot worklib.cv32e40p_wrapper:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence/Xcellium/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+[cv32e40p_core]: PULP_XPULP =           0, PULP_CLUSTER =           0, FPU           0, PULP_ZFINX           0, NUM_MHPMCOUNTERS           1
+xmsim: *W,NOCOND: Unique case violation:  Every case item expression was false.
+            File: /scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_load_store_unit.sv, line = 419, pos = 14
+           Scope: cv32e40p_wrapper.core_i.load_store_unit_i
+            Time: 0 FS + 23
+
+[TB] Fetch enabled
+[TB] Debug running=x halted=x
+Simulation complete via $finish(1) at time 1250 NS + 0
+./soc_wrapper_tb.sv:285     $finish;
+xcelium> exit
+TOOL:	xrun(64)	21.09-s005: Exiting on Jan 14, 2026 at 14:30:12 IST  (total: 00:00:03)

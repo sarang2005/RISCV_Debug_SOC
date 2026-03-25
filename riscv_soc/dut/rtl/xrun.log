@@ -1,0 +1,35 @@
+xrun(64): 21.09-s005: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	21.09-s005: Started on Mar 24, 2026 at 15:08:52 IST
+xrun
+	-64bit
+	-sv
+	-f file_list.f
+		+incdir+./core/include
+		+incdir+./core/bhv/include
+		+incdir+./core
+		+incdir+./dm
+		./core/include/*.sv
+		./core/bhv/include/*.sv
+		./core/bhv/*.sv
+		./core/*.sv
+		./dm/*.v
+		./cv32e40p_data2axi.sv
+		./soc_wrapper.sv
+		./soc_wrapper_tb.sv
+	-access +rwc
+Loading snapshot worklib.cv32e40p_wrapper:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence/Xcellium/tools/xcelium/files/xmsimrc
+xcelium> run
+[cv32e40p_core]: PULP_XPULP =           0, PULP_CLUSTER =           0, FPU           0, PULP_ZFINX           0, NUM_MHPMCOUNTERS           1
+xmsim: *W,NOCOND: Unique case violation:  Every case item expression was false.
+            File: ./core/cv32e40p_load_store_unit.sv, line = 420, pos = 14
+           Scope: cv32e40p_wrapper.core_i.load_store_unit_i
+            Time: 0 FS + 23
+
+[TB] Fetch enabled
+[TB] Debug running=x halted=x
+Simulation complete via $finish(1) at time 1250 NS + 0
+./soc_wrapper_tb.sv:309     $finish;
+xcelium> exit
+TOOL:	xrun(64)	21.09-s005: Exiting on Mar 24, 2026 at 15:08:53 IST  (total: 00:00:01)

@@ -1,0 +1,173 @@
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+    cv32e40p_core_i
+                  |
+xmelab: *W,CUVWSP (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,210|18): 3 output ports were not connected:
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,91): debug_havereset_o
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,92): debug_running_o
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,93): debug_halted_o
+
+    cv32e40p_core_i
+                  |
+xmelab: *W,CUVWSI (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,210|18): 2 input ports were not connected:
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,49): mtvec_addr_i
+xmelab: (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv,52): dm_exception_addr_i
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+         .irq_id_o               ( irq_id_out_o            ),
+                                              |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,249|46): port sizes differ in port connection(1/5) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_awaddr(core_axi_m_awaddr),
+                                         |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,358|41): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_wdata(core_axi_m_wdata),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,368|39): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_wstrb(core_axi_m_wstrb),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,369|39): port sizes differ in port connection(8/4) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_araddr(core_axi_m_araddr),
+                                         |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,378|41): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+      .core_axi_m_rdata(core_axi_m_rdata),
+                                       |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,387|39): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+     .access_mem_data_in             (mem_read_data              ),
+                                                  |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v,276|50): port sizes differ in port connection(32/64) for the instance(tb_riscv_soc_wrapper.dut.dut) .
+     .core_data_in                   (core_read_data             ),
+                                                   |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v,289|51): port sizes differ in port connection(32/64) for the instance(tb_riscv_soc_wrapper.dut.dut) .
+  .axi_awaddr ( core_axi_m_awaddr ),
+                                |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,425|32): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_wdata  ( core_axi_m_wdata ),
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,429|31): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_wstrb  ( core_axi_m_wstrb ),
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,430|31): port sizes differ in port connection(8/4) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_araddr ( core_axi_m_araddr ),
+                                |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,437|32): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+  .axi_rdata  ( core_axi_m_rdata )
+                               |
+xmelab: *W,CUVMPW (/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/soc_wrapper.sv,441|31): port sizes differ in port connection(33/32) for the instance(tb_riscv_soc_wrapper.dut) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.cv32e40p_data2axi:sv <0x50cc1929>
+			streams:   4, words:  2979
+		worklib.axi_master:v <0x5e824dd3>
+			streams:   3, words:  6745
+		worklib.debug_module_fsm:v <0x3ded21aa>
+			streams:   7, words:  5869
+		worklib.dm_register_mux:v <0x362d2cc2>
+			streams:   2, words:  2653
+		worklib.data_reg:v <0x62a137a6>
+			streams:  39, words: 27822
+		worklib.dmstatus:v <0x79a47981>
+			streams:   4, words:  8226
+		worklib.command:v <0x6f9e7e34>
+			streams:   9, words:  5868
+		worklib.dmcontrol:v <0x6b9d2f9f>
+			streams:  16, words:  5531
+		worklib.abstractcs:v <0x3788ea2c>
+			streams:   5, words:  4012
+		worklib.dm_register_file:v <0x649aca6b>
+			streams:  11, words:  5876
+		worklib.apb_slave:v <0x2e9f762f>
+			streams:   5, words:  2285
+		worklib.debug_module_top:v <0x7f246f06>
+			streams:  11, words:  4410
+		worklib.cv32e40p_obi_interface:sv <0x1ba1f92c>
+			streams:   4, words:   548
+		worklib.cv32e40p_load_store_unit:sv <0x164d3410>
+			streams:  30, words: 16928
+		worklib.cv32e40p_ex_stage:sv <0x0e01145a>
+			streams:  17, words: 11685
+		worklib.cv32e40p_int_controller:sv <0x2f00bd72>
+			streams:  10, words:  6981
+		worklib.cv32e40p_controller:sv <0x56518b71>
+			streams:  24, words: 50890
+		worklib.cv32e40p_sleep_unit:sv <0x0b2f16a3>
+			streams:  10, words:  2402
+		worklib.cv32e40p_core:sv <0x3430dcd8>
+			streams: 287, words: 61728
+		worklib.riscv_soc_wrapper:sv <0x404c7c76>
+			streams:  42, words:  7934
+		worklib.tb_riscv_soc_wrapper:sv <0x056ec2cd>
+			streams:  17, words:  8822
+		worklib.cv32e40p_obi_interface:sv <0x51118f2a>
+			streams:   8, words:  1106
+		worklib.cv32e40p_load_store_unit:sv <0x53f1e1b0>
+			streams:  42, words: 22069
+		worklib.cv32e40p_mult:sv <0x38213d57>
+			streams:  41, words: 24466
+		worklib.cv32e40p_ex_stage:sv <0x2f096c5b>
+			streams:  17, words: 12621
+		worklib.cv32e40p_int_controller:sv <0x0b21e570>
+			streams:  10, words:  6981
+		worklib.cv32e40p_controller:sv <0x2b9ade08>
+			streams:  28, words: 55830
+		worklib.cv32e40p_decoder:sv <0x40aabd01>
+			streams:  14, words: 42845
+		worklib.cv32e40p_compressed_decoder:sv <0x7978dba5>
+			streams:   6, words: 15894
+		worklib.cv32e40p_aligner:sv <0x64f648fe>
+			streams:   6, words:  6825
+		worklib.cv32e40p_obi_interface:sv <0x38ba9d43>
+			streams:  17, words:  4931
+		worklib.cv32e40p_fifo:sv <0x11b86dae>
+			streams:  11, words:  7728
+		worklib.cv32e40p_prefetch_controller:sv <0x36cdc532>
+			streams:  20, words:  8066
+		worklib.cv32e40p_prefetch_buffer:sv <0x1ed702c4>
+			streams:  31, words:  7361
+		worklib.cv32e40p_if_stage:sv <0x078332a3>
+			streams:  31, words: 13808
+		worklib.cv32e40p_clock_gate:sv <0x540f5f3c>
+			streams:   3, words:   611
+		worklib.cv32e40p_sleep_unit:sv <0x43e4a593>
+			streams:  11, words:  2783
+		worklib.cv32e40p_core_log:sv <0x16f38e46>
+			streams:   2, words:  2982
+		worklib.cv32e40p_wrapper:sv <0x259d3a7c>
+			streams:  20, words:  5568
+		worklib.cv32e40p_id_stage:sv <0x3eb81a3f>
+			streams: 228, words: 100271
+		worklib.cv32e40p_core:sv <0x190a4257>
+			streams: 305, words: 68187
+		worklib.cv32e40p_register_file:sv <0x33d15aeb>
+			streams:  14, words:  7485
+		worklib.cv32e40p_register_file:sv <0x23b676aa>
+			streams:  14, words:  7485
+		worklib.cv32e40p_popcnt:sv <0x60915ced>
+			streams:   5, words:  2182
+		worklib.cv32e40p_ff_one:sv <0x407d1d23>
+			streams:  13, words: 13201
+		worklib.cv32e40p_alu_div:sv <0x00291f56>
+			streams:  22, words: 10013
+		worklib.cv32e40p_alu:sv <0x2a34a4be>
+			streams: 108, words: 85447
+		worklib.cv32e40p_cs_registers:sv <0x326cf3f8>
+			streams:  85, words: 69393
+		worklib.cv32e40p_id_stage:sv <0x33866512>
+			streams: 223, words: 98030
+		worklib.cv32e40p_fpu_pkg:sv <0x6d4b7511>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 66      40
+		Verilog packages:         3       3
+		Registers:             2545    1367
+		Scalar wires:          2505       -
+		Expanded wires:          78       4
+		Vectored wires:        1798       -
+		Always blocks:          284     135
+		Initial blocks:           4       4
+		Cont. assignments:     1819     575
+		Pseudo assignments:    1060    1001
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.cv32e40p_wrapper:sv

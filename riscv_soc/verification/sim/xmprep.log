@@ -1,0 +1,58 @@
+xmprep(64): 21.09-s005: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xmprep	21.09-s005: Started on Jan 13, 2026 at 16:04:44 IST
+xmprep
+	-64bit
+	+overwrite
+	-timescale
+	1ns/1ns
+	-uvm
+	-f file_list.f
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_apu_core_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_fpu_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include/cv32e40p_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include/cv32e40p_tracer_pkg.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_if_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_cs_registers.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_register_file_ff.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_load_store_unit.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_id_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_aligner.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_decoder.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_compressed_decoder.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_fifo.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_buffer.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_hwloop_regs.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_mult.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_int_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ex_stage.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu_div.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_alu.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_ff_one.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_popcnt.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_apu_disp.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_obi_interface.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_prefetch_controller.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_sleep_unit.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/cv32e40p_core.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_sim_clock_gate.sv
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/cv32e40p_wrapper.sv
+		+incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/apb_slave.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/axi_master.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_fsm.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/debug_module_top.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_file.v
+		/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm/dm_register_mux.v
+		../../dut/rtl/cv32e40p_data2axi.sv
+		../../dut/rtl/soc_wrapper.sv
+		soc_wrapper_tb.sv
+	+debug
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d
+Translation successful.
+TOOL:	xmprep	21.09-s005: Exiting on Jan 13, 2026 at 16:04:46 IST  (total: 00:00:02)

@@ -1,0 +1,29 @@
+//
+// File created by:  xmprep
+//
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/include
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/bhv/include
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/core/sva
++incdir+/scratch/semi_projects/RISC_V_Integration/sarang/riscv_soc/dut/rtl/dm
+-loadpli
+/tools/cadence/Xcellium/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
+-timescale
+1ns/1ns
++debug
+
+// Turn on informative messages.
+-MESSAGES
+-WORK
+worklib
+// Top level module(s)
+cv32e40p_wrapper
+tb_riscv_soc_wrapper
+// Design snapshot name
+-SNAPSHOT
+worklib.cv32e40p_wrapper:sv
+
+// Uncomment the following line to generate a named log file
+// -LOGFILE xmelab.log
+
+// -NOCOPYRIGHT
